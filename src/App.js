@@ -1,25 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import UserForm from "./components/user-form"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div class="box-one">
+        <div>
+            <h1>DIRECCIÓN DE ENVÍO</h1>
+        </div>
+        <UserForm />
     </div>
-  );
+
+    <div class="box-two">
+        <h1>RESUMEN DE LA ORDEN</h1>
+    </div>
+    </div>
+  ); 
 }
 
 export default App;
